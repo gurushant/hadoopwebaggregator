@@ -1,0 +1,22 @@
+This is the aggregator for data implemented as web application.
+It takes following inputs
+1.Input file: Browse and select any data file .
+2.Job Name : This is the job name
+3.Seperator:Seperator of the data file. It could be (, $ ,#,@).
+4.Is Splittable:You can specify , whether the file is splitable or not.
+5.Split size
+6.Io.sort.mb = Buffer memory for mapper
+7.Min spills: This is required to decide whether to run combiner.
+8.Reducer count.
+9.Keys: Here you can specify comma seperated key indexes. ie : suppose you have 1,100,22,1101,121 and specifies keys is say 1,5 then 1 and 121 will be your key.
+10.Valiues:Here you can specify comma seperated value indexes.ie : suppose you have 1,100,22,1101,121 and specifies values is say 2,4 then 100 and 1101 will be your value.
+
+Submit button to submit the job and it shows Executing job as status and once after finishing the execution it shows Report link.On click of this link you can download the report folder.
+
+
+This project can be imported as an eclipse Project . Run submit_job.jsp and before this , make sure hadoop is running.
+
+
+As this is the beta version and it may have some bugs. Constructive criticism are wel come.
+Thanks,
+Gurushant
